@@ -90,7 +90,7 @@ $(function() {
         });
 
         it('should have at least a single entry element', function(done) {
-            expect($('.entry').length).not.toBe(0);
+            expect($('.feed .entry').length).not.toBe(0);
             done();
         });
     });
