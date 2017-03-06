@@ -35,7 +35,7 @@ $(function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
-            }) 
+            }); 
         });
 
 
@@ -47,7 +47,7 @@ $(function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
-            }) 
+            });
         });
     });
 
@@ -86,7 +86,7 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         beforeEach(function(done) {
-            loadFeed(0, done)
+            loadFeed(0, done);
         });
 
         it('should have at least a single entry element', function(done) {
